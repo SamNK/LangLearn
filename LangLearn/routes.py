@@ -1,7 +1,7 @@
-from cs350_proj.models import Student, logged_in_users
-from cs350_proj import app, database, cursor
+from LangLearn.models import Student, logged_in_users
+from LangLearn import app, database, cursor
 from flask import render_template, url_for, flash, redirect, request, Markup
-from cs350_proj.forms import RegisterationForm, LoginForm, UpdateAccountForm, SelectLanguageForm, DeleteLanguageForm
+from LangLearn.forms import RegisterationForm, LoginForm, UpdateAccountForm, SelectLanguageForm, DeleteLanguageForm
 from flask_login import login_user, current_user, logout_user, login_required
 
 posts = [
