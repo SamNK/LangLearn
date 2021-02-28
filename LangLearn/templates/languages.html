@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block content %}
+
+
+    <form class=form-group method="POST">
+        <div>
+            <p> Choose a language to add to your classes </p>
+            {{ form.language }}
+            <p>  </p>
+            <p> Choose a language level </p>
+            {{ form.level }}
+            <p>  </p>
+
+        </div>
+        
+        <div  class="border-top pt-3" >
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+    </form>
+    
+
+{% endblock %}

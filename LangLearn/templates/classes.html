@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    <h1>Your classes</h1>
+    {% for post in posts %}
+        <article class="media content-section">
+            <div class="media-body">
+            <h2><a class="article-title" href='/classes/{{ post[2] }}'>{{post[0]}}</a></h2>
+            <p class="article-content">level {{post[1]}}</p>
+            </div>
+        </article>
+        
+    {% endfor %}    
+
+    <form class=form-group method="POST">
+        <div class="border-top pt-3">
+            <small class="text-muted">
+                Choose a language to delete
+            </small>
+            <p> </p>
+            {{ form.language }}
+            {{ form.level }}
+            {{ form.submit() }}
+        </div>
+    </form>
+{% endblock %}
