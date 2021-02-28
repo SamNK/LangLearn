@@ -1,5 +1,5 @@
 from flask_login import LoginManager, UserMixin, login_user, current_user
-from cs350_proj import app, database, cursor, login_manager
+from LangLearn import app, database, cursor, login_manager
 from flask_login import login_user
 
 logged_in_users = []
