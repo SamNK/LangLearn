@@ -4,8 +4,8 @@ from flask_wtf.file import FileField, FileAllowed
 from wtforms import StringField, PasswordField, SubmitField, BooleanField, SelectField
 from flask_login import current_user
 from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationError
-from cs350_proj.models import Student
-from cs350_proj import app, database, cursor
+from LangLearn.models import Student
+from LangLearn import app, database, cursor
 
 class RegisterationForm(FlaskForm):
     username = StringField('Username',
